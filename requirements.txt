@@ -5,4 +5,4 @@ tiktoken==0.4.0
 faiss-cpu==1.7.4
 protobuf~=3.19.0
 google-generativeai
-from langchain.embeddings import HuggingFaceInstructEmbeddings
+pip version 22.0.3
