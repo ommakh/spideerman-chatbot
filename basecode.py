@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 
-api_key = 'AIzaSyAnfZhaN9FqoWy-Wzr7fNiBl691ytjLbV0'
+api_key = 'Enter your api key'
 print("we are good...")
 
 llm = GooglePalm(google_api_key=api_key)
