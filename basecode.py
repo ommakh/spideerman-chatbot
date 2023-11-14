@@ -8,13 +8,11 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import networkx
 
-api_key = 'AIzaSyAnfZhaN9FqoWy-Wzr7fNiBl691ytjLbV0'
+api_key = 'Enter the api key'
 print("we are good...")
 
 llm = GooglePalm(google_api_key=api_key)
-poem = llm("write a poem on om makh")
 
-print(poem)
 
 from langchain.document_loaders.csv_loader import CSVLoader
 
@@ -22,7 +20,7 @@ from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
 
 instructor_embeddings = HuggingFaceInstructEmbeddings()
-vectordb_file_path = "faiss_index3"
+vectordb_file_path = "enter the file path name"
 
 
 def create_vector_db():
@@ -33,16 +31,16 @@ def create_vector_db():
 
     print(datx)
     vectordb = FAISS.from_documents(documents=datx, embedding=instructor_embeddings)
-    vectordb.save_local("faiss_index3")
+    vectordb.save_local("enter the file path name")
 
 
 """
 import requests
 
 # Set the API key
-API_KEY = "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"
+API_KEY = "enter the api key"
 
-# Define the model name
+# Define the model name that is taken from hugging face
 MODEL_NAME = "hkunlp/instructor-large"
 
 # Define the text to embed
