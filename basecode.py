@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import langchain
 from langchain.llms import GooglePalm
 from langchain.schema import document
